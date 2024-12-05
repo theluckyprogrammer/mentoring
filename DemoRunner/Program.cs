@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices.Marshalling;
+﻿using DemoRunner;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace Test
 {
@@ -12,13 +13,14 @@ namespace Test
             Demo ArraysDemo = new ArraysDemo();
             Demo regexDemo = new RegexDemo();
 
+            Demo inheritanceDemo = new InheritanceDemo();
+            inheritanceDemo.Run();            
+            
+
+            
+
             regexDemo.Run();
         }
 
-    }
-
-    public abstract class Demo
-    {
-        public abstract void Run();
     }
 }
