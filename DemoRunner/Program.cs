@@ -8,13 +8,14 @@ namespace Test
 
         static void Main(string[] args)
         {
-
+           
             Demo switchDemo = new SwitchStatementDemo();
             Demo ArraysDemo = new ArraysDemo();
             Demo regexDemo = new RegexDemo();
 
             Demo inheritanceDemo = new InheritanceDemo();
-            inheritanceDemo.Run();            
+            Demo castingDemo = new CastingDemo();
+            castingDemo.Run();            
             
 
             

@@ -17,7 +17,7 @@ namespace DemoRunner
         {
             Vehicle auto = new Auto { Name = "BMW" };
             Vehicle airplane = new Airplane { Name = "Boeing 737" };
-            Vehicle submarine = new Submarine { Name = "USS Whatever" };
+            Vehicle submarine = new Submarine("USS A");
             
             VehicleGo(auto);
             VehicleGo(airplane);
@@ -35,15 +35,26 @@ namespace DemoRunner
         abstract class Vehicle
         {
             public string Name;
+            protected string Brand;
             protected string FuelKind;
-         
+
+            protected Vehicle(string brand)
+            {                
+                Brand = brand;
+            }
+
+            public Vehicle()
+            {
+
+            }
+
 
             public abstract string GO();
         }
 
         class Auto : Vehicle
         {
-            public Auto() {
+            public Auto():base("AUDI") {
 
                 FuelKind = "benzyna";
             }
@@ -56,7 +67,7 @@ namespace DemoRunner
 
         class Airplane : Vehicle
         {
-            public Airplane() {
+            public Airplane():base() {
                 FuelKind = "paliwo rakietowe";
             }
 
@@ -68,8 +79,13 @@ namespace DemoRunner
 
         class Submarine : Vehicle
         {
-            public Submarine() {
+            private Submarine() {
                 FuelKind = "energia atomowa";
+            }
+
+            public Submarine(string fuelKind)
+            {
+               this.Brand = fuelKind;
             }
 
             public override string GO()
