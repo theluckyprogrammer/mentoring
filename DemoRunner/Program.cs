@@ -15,12 +15,10 @@ namespace Test
 
             Demo inheritanceDemo = new InheritanceDemo();
             Demo castingDemo = new CastingDemo();
-            castingDemo.Run();            
-            
-
-            
-
-            regexDemo.Run();
+            Demo linqDemo = new LinqDemo();
+            Demo shallowCopy = new  ShallowCopyDemo();
+            shallowCopy.Run();
+          
         }
 
     }
