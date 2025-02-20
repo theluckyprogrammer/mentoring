@@ -10,14 +10,16 @@ namespace Test
         {
            
             Demo switchDemo = new SwitchStatementDemo();
-            Demo ArraysDemo = new ArraysDemo();
+            Demo arraysDemo = new ArraysDemo();
             Demo regexDemo = new RegexDemo();
 
             Demo inheritanceDemo = new InheritanceDemo();
             Demo castingDemo = new CastingDemo();
             Demo linqDemo = new LinqDemo();
             Demo shallowCopy = new  ShallowCopyDemo();
-            shallowCopy.Run();
+            Demo sendMailDemo = new SendMailDemo();
+
+            linqDemo.Run();
           
         }
 

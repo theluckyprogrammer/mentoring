@@ -10,18 +10,8 @@ namespace Test
     {
 
         public override void Run()
-            {
-            int wynikprzez3 = 3 % 3;
-            if (wynikprzez3 > 0)
-            {
-                Console.WriteLine("nie dzieli sie przez 3");
-            }
-
-            if (wynikprzez3 == 0)
-            {
-                Console.WriteLine("dzieli sie przez 3");
-            }
-
+        {
+           
             string markaSamochodu = "AUDI";
             string modelSamochodu = "Quattro";
             string markaimodel = markaSamochodu + modelSamochodu;
