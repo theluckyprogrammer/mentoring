@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Test
+namespace Abstract
 {
     /// <summary>
     /// Abstract base class for demonstrations.

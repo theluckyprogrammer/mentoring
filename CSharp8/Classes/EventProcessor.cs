@@ -1,4 +1,5 @@
-﻿using Abstract;
+﻿using Abstract.Classes;
+using Abstract.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,9 @@ using System.Text;
 
 namespace CSharp8.Classes
 {
-    public class EventProcessor : Abstract.EventProcessor
+    public class EventProcessor : Abstract.Classes.EventProcessor
     {
-        public override string ProcessEvent(EventPayload? payload) // Nullable to show null check pattern
+        public override string ProcessEvent(IEventPayload? payload) // Nullable to show null check pattern
         {
             // The C# 8 switch expression is used here.
             return payload switch

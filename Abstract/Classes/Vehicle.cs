@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstract
+namespace Abstract.Classes
 {
     public abstract class Vehicle
     {
@@ -60,7 +60,7 @@ namespace Abstract
 
         public Submarine(string fuelKind)
         {
-            this.Brand = fuelKind;
+            Brand = fuelKind;
         }
 
         public override string GO()

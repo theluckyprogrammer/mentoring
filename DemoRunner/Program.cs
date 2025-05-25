@@ -1,7 +1,7 @@
 ﻿using DemoRunner;
 using System.Runtime.InteropServices.Marshalling;
 
-namespace Test
+namespace Abstract
 {
     internal class Program
     {

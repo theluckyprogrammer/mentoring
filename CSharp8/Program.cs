@@ -1,4 +1,4 @@
-﻿using Test;
+﻿using Abstract;
 
 namespace CSharp8
 {
@@ -6,7 +6,7 @@ namespace CSharp8
     {
         static void Main(string[] args)
         {
-            Demo.Run(typeof(PatternMatching));            
+            Abstract.Demo.Run(typeof(PatternMatching));            
         }
     }
 }

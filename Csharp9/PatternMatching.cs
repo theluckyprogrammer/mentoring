@@ -5,16 +5,16 @@ using System.Text;
 using Abstract;
 using static System.Console;
 
-namespace CSharp8
+namespace CSharp9
 {
     internal class PatternMatching : Abstract.Demo
     {
         public override void Run()
         {
-            var processor = new CSharp8.Classes.EventProcessor();
+            var processor = new CSharp9.Classes.EventProcessor();
             var now = DateTime.UtcNow;
 
-            WriteLine("--- Processing Events (C# 8.0 Rules) ---");
+            WriteLine("--- Processing Events (C# 9.0 Rules) ---");
 
             List<EventPayload?> eventsToProcess = new List<EventPayload?>
             {

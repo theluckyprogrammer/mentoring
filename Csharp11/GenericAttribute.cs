@@ -4,12 +4,12 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Test;
+using Abstract;
 using static System.Console;
 
 namespace Csharp11
 {
-    internal class GenericAttribute : Demo
+    internal class GenericAttribute : Abstract.Demo
     {
         public override void Run()
         {

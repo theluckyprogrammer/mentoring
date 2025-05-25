@@ -1,12 +1,12 @@
 ﻿using Abstract;
 
-namespace Csharp11
+namespace CSharp10
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Abstract.Demo.Run(typeof(GenericAttribute));            
+            Demo.Run(typeof(PatternMatching));
         }
     }
 }

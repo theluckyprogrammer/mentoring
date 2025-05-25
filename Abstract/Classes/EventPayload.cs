@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Abstract.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstract
+namespace Abstract.Classes
 {
-    public abstract class EventPayload
+    public abstract class EventPayload : IEventPayload
     {
-        protected Guid Id => Guid.NewGuid();
+        public Guid Id => Guid.NewGuid();
 
     };
 

@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Test;
+using Abstract;
 
 namespace DemoRunner
 {
