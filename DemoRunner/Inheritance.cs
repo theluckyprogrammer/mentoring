@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,67 +33,7 @@ namespace DemoRunner
 
 
 
-        abstract class Vehicle
-        {
-            public string Name;
-            protected string Brand;
-            protected string FuelKind;
-
-            protected Vehicle(string brand)
-            {                
-                Brand = brand;
-            }
-
-            public Vehicle()
-            {
-
-            }
-
-
-            public abstract string GO();
-        }
-
-        class Auto : Vehicle
-        {
-            public Auto():base("AUDI") {
-
-                FuelKind = "benzyna";
-            }
-
-            public override string GO()
-            {
-                return "jade po drodze, napędza mnie " + FuelKind; 
-            }
-        }
-
-        class Airplane : Vehicle
-        {
-            public Airplane():base() {
-                FuelKind = "paliwo rakietowe";
-            }
-
-            public override string GO()
-            {
-                return "lece w powietrzu, napędza mnie " + FuelKind;
-            }
-        }
-
-        class Submarine : Vehicle
-        {
-            private Submarine() {
-                FuelKind = "energia atomowa";
-            }
-
-            public Submarine(string fuelKind)
-            {
-               this.Brand = fuelKind;
-            }
-
-            public override string GO()
-            {
-                return "Płyne pod wodą, napędza mnie " + FuelKind;
-            }
-        }
+        
     }
 
 }

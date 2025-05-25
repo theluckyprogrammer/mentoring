@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Test;
+using static System.Console;
 
 namespace Csharp11
 {
@@ -20,19 +21,22 @@ namespace Csharp11
             var myIntProp = initIntAndStringWithDefault.GetType().GetProperty("MyInt");
             var myIntAttrib = (DefaultValueAttribute<int>)Attribute.GetCustomAttribute(myIntProp, typeof(DefaultValueAttribute<int>));
 
-            Console.WriteLine(myIntAttrib?.Value);
-            Console.WriteLine(myStringAttrib?.Value);
+            WriteLine(myIntAttrib?.Value);
+            WriteLine(myStringAttrib?.Value);
         }
 
 
-        internal class Example
-        {
-            [DefaultValue<int>(-17)]
-            public int MyInt { get; set; }
+        
+    }
 
-            [DefaultValue<string>("Hello")]
-            public string MyString { get; set; }
-        }
+    // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/file
+    file class Example
+    {
+        [DefaultValue<int>(-17)]
+        public int MyInt { get; set; }
+
+        [DefaultValue<string>("Hello")]
+        public string MyString { get; set; }
     }
 
     [AttributeUsage(AttributeTargets.Property)]
