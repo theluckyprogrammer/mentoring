@@ -7,7 +7,7 @@ namespace ClientOfDemoRunner
         InternalInheritance()
         {
             Demo d = new RegexDemo();
-            // Demo d = new InheritanceDemo();
+         // Demo d = new InheritanceDemo();
         } 
     }
 }
