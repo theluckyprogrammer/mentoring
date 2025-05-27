@@ -1,4 +1,5 @@
 ﻿using Abstract;
+using CSharp11;
 
 namespace Csharp11
 {
@@ -6,7 +7,7 @@ namespace Csharp11
     {
         static void Main(string[] args)
         {
-            Abstract.Demo.Run(typeof(GenericAttribute));            
+            Abstract.Demo.Run(typeof(PatternMatching));            
         }
     }
 }
